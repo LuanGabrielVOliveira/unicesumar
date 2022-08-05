@@ -8,31 +8,31 @@
 
   	<meta name="author" content="Luan Gabriel de V. Oliveira - 21180457-5">
 
-    <meta name="description" content="Marmitas da Dona Rita">
+    <meta name="description" content="Marmitas da Dona Dirce">
 
-    <meta name="keywords" content="marmitas, Dona, Rita, comida, gostosa">
+    <meta name="keywords" content="marmitas, Dona, Dirce, comida, gostosa">
 
   <title>
 
-Marmitas da Dona Rita
+Marmitas da Dona Dirce
 
   </title>
 
- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
 
 <!-- Bootstrap -->
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 <!-- JavaScript -->
 
- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
  
- <!-- CSS -->
- <link rel="stylesheet" type="text/css" href="mapa.css">
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="mapa.css">
  
- <!-- Font Google -->
+<!-- Font Google -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,7 +76,7 @@ Marmitas da Dona Rita
 
 <h3> Impossível não voltar novamente </h3>
 
-<center><button>Saiba mais  </button></center>
+<center><button> Saiba mais </button></center>
 
 </section> 
 
@@ -91,17 +91,17 @@ Marmitas da Dona Rita
 <?php
 
 $dados = array (
-  array("img"=>"imagens\cardapio\caseira.jpg", "titulo"=>"Marmita caseira", "info"=>"Deliciosa comida caseira, por somente <b>R$ 12,99</b>.")
+  array("img"=>"imagens\cardapio\caseira.jpg", "titulo"=>"Marmita caseira", "info"=>"Deliciosa marmita caseira, por somente <b>R$ 12,99</b>.")
 );
 
 foreach ($dados as $caseira) {
 
 ?>
 
-    <div class="col img-produto"><img src="<?php echo $caseira['img'];   ?>">
+<div class="col img-produto"><img id="img-cardapio" src="<?php echo $caseira['img'];   ?>">
 
-    <p>
-  <a class="btn btn-info" data-toggle="collapse" href="#caseira" role="button" aria-expanded="false" aria-controls="caseira">
+<p>
+  <a class="btn btn-info" id="botao" data-toggle="collapse" href="#caseira" role="button" aria-expanded="false" aria-controls="caseira">
     <?php echo $caseira['titulo'];   ?>
   </a>
 </p>
@@ -115,17 +115,17 @@ foreach ($dados as $caseira) {
   <?php
 
 $dados = array (
-  array("img"=>"imagens\cardapio\churrasco.jpg", "titulo"=>"Marmita com churrasco", "info"=>"Deliciosa comida com churrasco, com direiro a carne, linguiça ou frango, por apenas <b>R$ 17,99</b>.")
+  array("img"=>"imagens\cardapio\churrasco.jpg", "titulo"=>"Marmita com churrasco", "info"=>"Deliciosa marmita com churrasco, com direiro a carne, linguiça ou frango, por apenas <b>R$ 17,99</b>.")
 );
 
 foreach ($dados as $churrasco) {
 
 ?>
 
-    <div class="col img-produto"><img src="<?php echo $churrasco['img'];   ?>">
+<div class="col img-produto"><img id="img-cardapio" src="<?php echo $churrasco['img'];   ?>">
     
-    <p>
-  <a class="btn btn-info" data-toggle="collapse" href="#churrasco" role="button" aria-expanded="false" aria-controls="churrasco">
+<p>
+  <a class="btn btn-info" id="botao" data-toggle="collapse" href="#churrasco" role="button" aria-expanded="false" aria-controls="churrasco">
     <?php echo $churrasco['titulo'];   ?>
   </a>
 </p>
@@ -133,23 +133,23 @@ foreach ($dados as $churrasco) {
   <div class="card card-body">
     <?php echo $churrasco['info'];  } ?>
   </div>
-</div>
+ </div>
 </div>
 
 <?php
 
 $dados = array (
-  array("img"=>"imagens\cardapio\cucuz.jpg", "titulo"=>"Marmita com cucuz", "info"=>"Deliciosa comida com farofa de cucuz, por apenas <b>R$ 11,99</b>.")
+  array("img"=>"imagens\cardapio\cucuz.jpg", "titulo"=>"Marmita com cucuz", "info"=>"Deliciosa marmita com farofa de cucuz, por apenas <b>R$ 11,99</b>.")
 );
 
 foreach ($dados as $cucuz) {
 
 ?>
 
-    <div class="col img-produto"><img src="<?php echo $cucuz['img'];   ?>">
+<div class="col img-produto"><img id="img-cardapio" src="<?php echo $cucuz['img'];   ?>">
 
-    <p>
-  <a class="btn btn-info" data-toggle="collapse" href="#cucuz" role="button" aria-expanded="false" aria-controls="cucuz">
+<p>
+  <a class="btn btn-info" id="botao" data-toggle="collapse" href="#cucuz" role="button" aria-expanded="false" aria-controls="cucuz">
     <?php echo $cucuz['titulo'];   ?>
   </a>
 </p>
@@ -157,13 +157,13 @@ foreach ($dados as $cucuz) {
   <div class="card card-body">
     <?php echo $cucuz['info'];  } ?>
   </div>
-</div>
+ </div>
 </div>
 
-  <?php
+<?php
 
 $dados = array (
-  array("img"=>"imagens\cardapio\espaguete.jpg", "titulo"=>"Marmita com espaguete", "info"=>"Deliciosa comida com espaguete, por apenas <b>R$ 15,99</b>.")
+  array("img"=>"imagens/cardapio/espaguete.png", "titulo"=>"Marmita com espaguete", "info"=>"Deliciosa marmita com espaguete, por apenas <b>R$ 15,99</b>.")
 );
 
 foreach ($dados as $espaguete) {
@@ -171,10 +171,10 @@ foreach ($dados as $espaguete) {
   ?>  
 
 
-    <div class="col img-produto"><img src="<?php echo $espaguete['img'];   ?>">
+<div class="col img-produto"><img id="img-cardapio" src="<?php echo $espaguete['img']; ?>">
 
-    <p>
-  <a class="btn btn-info" data-toggle="collapse" href="#espaguete" role="button" aria-expanded="false" aria-controls="espaguete">
+<p>
+  <a class="btn btn-info" id="botao" data-toggle="collapse" href="#espaguete" role="button" aria-expanded="false" aria-controls="espaguete">
     <?php echo $espaguete['titulo']; ?>
   </a>
 </p>
@@ -183,25 +183,25 @@ foreach ($dados as $espaguete) {
     <?php echo $espaguete['info'];  } ?>
     </div>
   </div>
+ </div>
 </div>
-  </div>
 
   <div class="row">
 
     <?php
 
 $dados = array (
-  array("img"=>"imagens\cardapio\ovo.jpg", "titulo"=>"Marmita com ovo", "info"=>"Deliciosa comida com ovo, repleta de nutrientes! Por apenas <b>R$ 10,99</b>.")
+  array("img"=>"imagens\cardapio\ovo.jpg", "titulo"=>"Marmita com ovo", "info"=>"Deliciosa marmita com ovo, repleta de nutrientes! Por apenas <b>R$ 10,99</b>.")
 );
 
 foreach ($dados as $ovo) {
 
 ?>
 
-    <div class="col img-produto"><img src="<?php echo $ovo['img'];   ?>">
+<div class="col img-produto"><img id="img-cardapio" src="<?php echo $ovo['img'];   ?>">
 
-    <p>
-  <a class="btn btn-info" data-toggle="collapse" href="#ovo" role="button" aria-expanded="false" aria-controls="ovo">
+<p>
+  <a class="btn btn-info" id="botao" data-toggle="collapse" href="#ovo" role="button" aria-expanded="false" aria-controls="ovo">
     <?php echo $ovo['titulo']; ?>
   </a>
 </p>
@@ -209,13 +209,13 @@ foreach ($dados as $ovo) {
   <div class="card card-body">
     <?php echo $ovo['info'];  } ?>
   </div>
-</div>
+ </div>
 </div>
 
 <?php
 
 $dados = array (
-  array("img"=>"imagens\cardapio\saudavel.jpg", "titulo"=>"Marmita saudável", "info"=>"Deliciosa comida saudável, por apenas <b>R$ 14,99</b>.")
+  array("img"=>"imagens\cardapio\saudavel.jpg", "titulo"=>"Marmita saudável", "info"=>"Deliciosa marmita saudável, por apenas <b>R$ 14,99</b>.")
 );
 
 foreach ($dados as $saudavel) {
@@ -223,10 +223,10 @@ foreach ($dados as $saudavel) {
 ?>
 
 
-    <div class="col img-produto"><img src="<?php echo $saudavel['img']; ?>">
+<div class="col img-produto"><img id="img-cardapio" src="<?php echo $saudavel['img']; ?>">
 
-    <p>
-  <a class="btn btn-info" data-toggle="collapse" href="#saudavel" role="button" aria-expanded="false" aria-controls="saudavel">
+<p>
+  <a class="btn btn-info" id="botao" data-toggle="collapse" href="#saudavel" role="button" aria-expanded="false" aria-controls="saudavel">
     <?php echo $saudavel['titulo']; ?>
   </a>
 </p>
@@ -234,52 +234,58 @@ foreach ($dados as $saudavel) {
   <div class="card card-body">
     <?php echo $saudavel['info'];  } ?>
   </div>
-</div>
+ </div>
 </div>
 
-  <?php
+<?php
 
 $dados = array (
-  array("img"=>"imagens\cardapio\strogonoff.jpg", "titulo"=>"Marmita com strogonoff de frango", "info"=>"Deliciosa comida com strogonoff de frango, por apenas <b>R$ 16,99</b>.")
+  array("img"=>"imagens\cardapio\strogonoff.jpg", "titulo"=>"Marmita com strogonoff de frango", "info"=>"Deliciosa marmita com strogonoff de frango, por apenas <b>R$ 16,99</b>.")
 );
 
 foreach ($dados as $strogonoff) {
 
 ?>
 
-    <div class="col img-produto"><img src="<?php echo $strogonoff['img']; ?>">
+<div class="col img-produto"><img id="img-cardapio" src="<?php echo $strogonoff['img']; ?>">
 
-    <p>
-  <a class="btn btn-info" data-toggle="collapse" href="#strogonoff" role="button" aria-expanded="false" aria-controls="strogonoff">
-    <?php echo $saudavel['strogonoff']; ?>
+<p>
+  <a class="btn btn-info" id="botao" data-toggle="collapse" href="#strogonoff" role="button" aria-expanded="false" aria-controls="strogonoff">
+    <?php echo $strogonoff['titulo']; ?>
   </a>
 </p>
 <div class="collapse" id="strogonoff">
   <div class="card card-body">
-    <?php echo $saudavel['strogonoff'];  } ?>
+    <?php echo $strogonoff['info'];  } ?>
   </div>
+ </div>
 </div>
-</div>
 
+<?php
 
+$dados = array (
+  array("img"=>"imagens\cardapio\xradicional.jpg", "titulo"=>"Marmita tradicional", "info"=>"Deliciosa marmita tradicional, como fazia nossa avó! Por apenas <b>R$ 12,99</b>")
+);
 
-    <div class="col img-produto"><img src="imagens\cardapio\tradicional.jpg">
+foreach ($dados as $tradicional) {
+
+?>
+
+<div class="col img-produto"><img id="img-cardapio" src="<?php echo $tradicional['img']; ?>">
 
     <p>
-  <a class="btn btn-info" data-toggle="collapse" href="#tradicional" role="button" aria-expanded="false" aria-controls="tradicional">
-    Marmita tradicional
+  <a class="btn btn-info" id="botao" data-toggle="collapse" href="#tradicional" role="button" aria-expanded="false" aria-controls="tradicional">
+    <?php echo $tradicional['titulo']; ?>
   </a>
 </p>
 <div class="collapse" id="tradicional">
   <div class="card card-body">
-    Deliciosa comida tradicional, como fazia nossa avó! Por apenas <b>R$ 12,99</b>
+    <?php echo $tradicional['info'];  } ?>
   </div>
+ </div>
 </div>
-</div>
 
-
-
-  </div>
+ </div>
 </div>
 
 </section>
@@ -291,31 +297,31 @@ foreach ($dados as $strogonoff) {
 <table>
 
   <tr>
-  <th> Nossas páginas </th>
-  <th>Links úteis</th>
-  <th>Sobre o projeto</th>
+    <th> Nossas páginas </th>
+    <th>Links úteis</th>
+    <th>Sobre o projeto</th>
   </tr>
   <tr>
-  <td>Home</td>
-  <td>Políticas de privacidade</td>
-  <td>Projeto de divulgação das marmitas da dona Dirce</td>
+    <td>Home</td>
+    <td>Políticas de privacidade</td>
+    <td>Projeto de divulgação das marmitas da dona Dirce</td>
   </tr>
-<tr>
-  <td>Blog</td>
-  <td>Aviso legal</td>
-<tr>  
-<tr>
-  <td>Conheça a dona Dirce</td>
-  <td>Termos de uso</td>
-</tr>
-<tr>
-  <td>Contato</td>
-</tr>
+  <tr>
+   <td>Blog</td>
+   <td>Aviso legal</td>
+  <tr>  
+  <tr>
+   <td>Conheça a dona Dirce</td>
+   <td>Termos de uso</td>
+  </tr>
+  <tr>
+    <td>Contato</td>
+  </tr>
 </table>
 
 <hr>
 
-<center><p style="padding-bottom: 1.7%;"> Desenvolvido por Luan Gabriel de Vasconcelos OLiveira </p></center>
+<center><b><p style="padding-bottom: 1.7%;"> Desenvolvido por Luan Gabriel de Vasconcelos OLiveira - 21180457-5 </p></b></center>
 
 </footer>
 
