@@ -1,0 +1,109 @@
+/* Geral */
+
+body {
+	
+}
+
+header {
+background-color: #F8A73F;
+}
+
+figure img {
+	width: 20%;
+	margin-top: -4%;
+	
+	
+}
+
+.titulo {
+	font-family: 'Mouse Memoirs', sans-serif;
+	font-size: 200%;
+	margin-left: 5%;
+	
+
+/* Links */
+	
+}
+
+#links a  {
+	padding-right: 2%;
+}
+
+#links {
+	margin-top: 10%;
+}
+
+#links a:hover  {
+	color: #FFF;
+	text-decoration: none;
+}
+
+/* Sections */
+
+.secao1 {
+	background-size: 100%;
+	background-image: url("imagens/comida.jpg");
+	background-repeat: no-repeat;
+	
+}
+
+h1 {
+	text-align: center;
+	color: #FFF;
+	padding-top: 1%;
+}
+
+h3 {
+	text-align: center;
+	color: #DDF;
+	padding-bottom: 18%;
+}
+
+button {
+	background-color: #DE9610;
+	width: 25%;
+	margin-bottom: 5%;
+	font-family: Andale Mono, monospace;
+	font-weight: bolder;
+}
+
+
+
+footer {
+	background-color: #F8A73F;
+}
+
+h2 {
+	margin-left: 5%;
+}
+
+h8 {
+	margin-left: 5%;
+}
+
+hr  {
+	border-color: #FFF;
+	width: 95%;
+}
+
+/* Cardápio */
+
+.img-produto img {
+	width: 150px;
+	height: 150px;
+	padding: 2%;
+}
+
+/* Rodapé */
+
+table {
+	width: 100%;
+}
+
+table tr th {
+	text-align: center;
+}
+
+table tr td {
+	text-align: center;
+}
